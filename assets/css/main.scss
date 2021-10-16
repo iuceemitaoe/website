@@ -1,0 +1,177 @@
+html {
+    scroll-behavior: smooth;
+
+    body {
+        font-family: Lato,Arial;
+        #head1 {
+            font-size: 2rem;
+        }
+        .more{
+            margin: 1rem;
+        }
+        #moreMem {
+            display: none;
+
+        }
+        .but-tex {
+            margin: 1rem;
+            padding: 0.5rem 2rem;
+            border: 3px solid seagreen;
+            border-radius: 2rem;
+            text-align: center;
+            background-color: white;
+            color: seagreen;
+            font-size: 1.1rem;
+            font-weight: 400;
+            transition: all 0.3s;
+            box-shadow: 0 5px 10px gray;
+        }
+
+        .but-tex:hover {
+            font-weight: 600;
+            background-color: seagreen;
+            color: white;
+
+        }
+        #para {
+            font-size: 1.2rem;
+        }
+        .header {
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            
+            #logo{
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            button{
+                color: white;
+                background-color: seagreen;
+            }
+        }
+        .hero {
+            height: 100vh;
+            background-image: url(../images/home.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+                                     
+            .intro {
+                text-align: left;
+                color: white;
+                margin: 2rem;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                h1{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .about-us {
+            background-color: rgba(128,128,128,0.1);
+            ul {
+                margin: 1.5rem;
+                list-style-type: circle;
+            }
+        }
+        .events{
+            padding: 2rem;
+            text-align: center;
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+
+            .event-container {
+                display: grid;
+                grid-template-columns: repeat(3 , auto);
+                margin: 1rem;
+                .col {
+                    margin: 1rem;
+                    padding: .5rem;
+                    h2 {
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                    }
+                    p {
+                        margin: .5rem;
+                        margin-left: 1.5rem;
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .our-team {
+            background-color: rgba(128,128,128,0.1);
+            a {
+                background-color: seagreen;
+                padding: .5rem;
+                border-style: none;
+                border-radius: 2rem;
+                box-shadow: 0 3px 5px gray;
+                svg {
+                    color: white;
+                }
+            }
+            img {
+                border: 1px solid rgb(83, 83, 83);
+                border-radius: .5rem;
+            }
+            .button{
+                text-align: center;
+            }
+
+        }
+
+        .contact {
+            height: 100vh;
+            padding: 2rem;
+            .map {
+                margin: 10%;
+                border-radius: 1rem;
+                iframe {
+                    margin: auto;
+                    border: 1px solid grey;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        .hero {
+            display: none;
+            background-position: -9999px;
+            height: auto;
+            .intro {
+                text-align: center;
+                color: black;
+                h1 {
+                    color: black;
+                }
+                p {
+                    color: black;
+                }
+            }
+        }
+        .about-us {
+            padding-top: 4rem;
+            height: auto;
+        }
+        .events {
+            height: auto;
+        }
+    }
+}

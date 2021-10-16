@@ -1,0 +1,201 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  font-family: Lato,Arial;
+}
+
+html body #head1 {
+  font-size: 2rem;
+}
+
+html body .more {
+  margin: 1rem;
+}
+
+html body #moreMem {
+  display: none;
+}
+
+html body .but-tex {
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  border: 3px solid seagreen;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: white;
+  color: seagreen;
+  font-size: 1.1rem;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 5px 10px gray;
+          box-shadow: 0 5px 10px gray;
+}
+
+html body .but-tex:hover {
+  font-weight: 600;
+  background-color: seagreen;
+  color: white;
+}
+
+html body #para {
+  font-size: 1.2rem;
+}
+
+html body .header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+html body .header #logo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+html body .header button {
+  color: white;
+  background-color: seagreen;
+}
+
+html body .hero {
+  height: 100vh;
+  background-image: url(../images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+html body .hero .intro {
+  text-align: left;
+  color: white;
+  margin: 2rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+html body .hero .intro h1 {
+  font-size: 2.5rem;
+}
+
+html body .hero .intro p {
+  font-size: 1rem;
+}
+
+html body .about-us {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+html body .about-us ul {
+  margin: 1.5rem;
+  list-style-type: circle;
+}
+
+html body .events {
+  padding: 2rem;
+  text-align: center;
+}
+
+html body .events h1 {
+  font-size: 2.5rem;
+}
+
+html body .events p {
+  font-size: 1.1rem;
+}
+
+html body .events .event-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  margin: 1rem;
+}
+
+html body .events .event-container .col {
+  margin: 1rem;
+  padding: .5rem;
+}
+
+html body .events .event-container .col h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+html body .events .event-container .col p {
+  margin: .5rem;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+html body .our-team {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+html body .our-team a {
+  background-color: seagreen;
+  padding: .5rem;
+  border-style: none;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 3px 5px gray;
+          box-shadow: 0 3px 5px gray;
+}
+
+html body .our-team a svg {
+  color: white;
+}
+
+html body .our-team img {
+  border: 1px solid #535353;
+  border-radius: .5rem;
+}
+
+html body .our-team .button {
+  text-align: center;
+}
+
+html body .contact {
+  height: 100vh;
+  padding: 2rem;
+}
+
+html body .contact .map {
+  margin: 10%;
+  border-radius: 1rem;
+}
+
+html body .contact .map iframe {
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  body .hero {
+    display: none;
+    background-position: -9999px;
+    height: auto;
+  }
+  body .hero .intro {
+    text-align: center;
+    color: black;
+  }
+  body .hero .intro h1 {
+    color: black;
+  }
+  body .hero .intro p {
+    color: black;
+  }
+  body .about-us {
+    padding-top: 4rem;
+    height: auto;
+  }
+  body .events {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
