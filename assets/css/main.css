@@ -192,6 +192,14 @@ html body .contact .map iframe {
           box-shadow: 0 0 50px gray;
 }
 
+html body .footer svg {
+  color: white;
+}
+
+html body .footer svg:hover {
+  color: #9c9c9c;
+}
+
 @media only screen and (max-width: 768px) {
   body .hero {
     display: none;
