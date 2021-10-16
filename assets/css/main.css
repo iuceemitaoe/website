@@ -139,20 +139,36 @@ html body .our-team {
 html body .our-team a {
   background-color: seagreen;
   padding: .5rem;
-  border-style: none;
+  border-style: 2px solid white;
   border-radius: 2rem;
   -webkit-box-shadow: 0 3px 5px gray;
           box-shadow: 0 3px 5px gray;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
 }
 
 html body .our-team a svg {
   color: white;
 }
 
+html body .our-team a:hover {
+  background-color: white;
+  padding: 6px;
+  border-color: seagreen;
+  border-radius: 3rem;
+}
+
+html body .our-team a:hover svg {
+  color: seagreen;
+}
+
 html body .our-team img {
   border: 1px solid #535353;
   border-radius: .5rem;
+  -webkit-box-shadow: 0 0px 30px gray;
+          box-shadow: 0 0px 30px gray;
 }
+
 
 html body .our-team .button {
   text-align: center;
