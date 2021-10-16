@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
 html body {
-  font-family: Lato,Arial;
+  font-family: Poppins,Arial;
 }
 
 html body #head1 {
@@ -24,20 +26,20 @@ html body .but-tex {
   border: 3px solid seagreen;
   border-radius: 2rem;
   text-align: center;
-  background-color: white;
-  color: seagreen;
+  background-color: seagreen;
+  color: white;
   font-size: 1.1rem;
   font-weight: 400;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-box-shadow: 0 5px 10px gray;
-          box-shadow: 0 5px 10px gray;
+  -webkit-box-shadow: 0 0 10px #b3b3b3;
+          box-shadow: 0 0 10px #b3b3b3;
 }
 
 html body .but-tex:hover {
   font-weight: 600;
-  background-color: seagreen;
-  color: white;
+  background-color: white;
+  color: seagreen;
 }
 
 html body #para {
@@ -137,38 +139,43 @@ html body .our-team {
 }
 
 html body .our-team a {
-  background-color: seagreen;
+  background-color: white;
   padding: .5rem;
-  border-style: 2px solid white;
+  border-style: 2px solid seagreen;
   border-radius: 2rem;
-  -webkit-box-shadow: 0 3px 5px gray;
-          box-shadow: 0 3px 5px gray;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
 }
 
 html body .our-team a svg {
-  color: white;
+  color: seagreen;
 }
 
 html body .our-team a:hover {
-  background-color: white;
+  background-color: seagreen;
   padding: 6px;
   border-color: seagreen;
   border-radius: 3rem;
 }
 
 html body .our-team a:hover svg {
-  color: seagreen;
+  color: white;
 }
 
 html body .our-team img {
+  height: 240px;
+  width: auto;
   border: 1px solid #535353;
   border-radius: .5rem;
-  -webkit-box-shadow: 0 0px 30px gray;
-          box-shadow: 0 0px 30px gray;
+  -webkit-box-shadow: 0 0px 20px gray;
+          box-shadow: 0 0px 20px gray;
 }
 
+html body .our-team .button {
+  text-align: center;
+}
 
 html body .our-team .button {
   text-align: center;
